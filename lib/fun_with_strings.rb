@@ -19,7 +19,9 @@ module FunWithStrings
   end
   
   def anagram_groups
-    # your code here
+    array = self.split(" ")
+    array.each { |word| array[word.downcase.chars.sort.join] }
+    
   end
 end
 
